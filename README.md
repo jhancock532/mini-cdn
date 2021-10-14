@@ -1,3 +1,2 @@
-# Pencil Textures
-
-A simple collection of coloring pencil PNG texture assets.
+# Mini CDN
+A repository of assets used in various CodePen demos.
