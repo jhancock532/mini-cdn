@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini CDN - Font Assets</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+        h2 {
+            margin-top: 2rem;
+            color: #2980b9;
+        }
+        .asset-card {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .asset-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        code {
+            background: #eee;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menulo, monospace;
+            font-size: 0.9rem;
+        }
+        pre {
+            background: #2d3436;
+            color: #dfe6e9;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            position: relative;
+        }
+        .copy-hint {
+            font-size: 0.8rem;
+            color: #7f8c8d;
+            margin-top: 0.5rem;
+        }
+        .font-preview {
+            margin-top: 1rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        /* Font Face Declarations */
+        @font-face {
+            font-family: 'AmnestyTradeGothic-Bold';
+            src: url('./fonts/AmnestyTradeGothic-Bold.woff2') format('woff2');
+            font-weight: bold;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'AmnestyTradeGothic-BoldCondensed20';
+            src: url('./fonts/AmnestyTradeGothic-BoldCondensed20.woff2') format('woff2');
+            font-weight: bold;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'AmnestyTradeGothic-Regular';
+            src: url('./fonts/AmnestyTradeGothic-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'PatrickHand-Regular';
+            src: url('./PatrickHand-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .preview-atg-bold { font-family: 'AmnestyTradeGothic-Bold'; }
+        .preview-atg-condensed { font-family: 'AmnestyTradeGothic-BoldCondensed20'; }
+        .preview-atg-regular { font-family: 'AmnestyTradeGothic-Regular'; }
+        .preview-patrick { font-family: 'PatrickHand-Regular'; }
+    </style>
+</head>
+<body>
+    <h1>Mini CDN Asset Gallery</h1>
+    <p>This repository hosts font assets for use across various projects. You can link directly to these files once hosted on GitHub Pages.</p>
+
+    <h2>Fonts in <code>/fonts</code></h2>
+
+    <div class="asset-card">
+        <span class="asset-name">Amnesty Trade Gothic - Bold</span>
+        <code>./fonts/AmnestyTradeGothic-Bold.woff2</code>
+        <pre>@font-face {
+    font-family: 'AmnestyTradeGothic-Bold';
+    src: url('https://[USER].github.io/mini-cdn/fonts/AmnestyTradeGothic-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}</pre>
+        <div class="font-preview preview-atg-bold">The quick brown fox jumps over the lazy dog.</div>
+    </div>
+
+    <div class="asset-card">
+        <span class="asset-name">Amnesty Trade Gothic - Bold Condensed</span>
+        <code>./fonts/AmnestyTradeGothic-BoldCondensed20.woff2</code>
+        <pre>@font-face {
+    font-family: 'AmnestyTradeGothic-BoldCondensed20';
+    src: url('https://[USER].github.io/mini-cdn/fonts/AmnestyTradeGothic-BoldCondensed20.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}</pre>
+        <div class="font-preview preview-atg-condensed">The quick brown fox jumps over the lazy dog.</div>
+    </div>
+
+    <div class="asset-card">
+        <span class="asset-name">Amnesty Trade Gothic - Regular</span>
+        <code>./fonts/AmnestyTradeGothic-Regular.woff2</code>
+        <pre>@font-face {
+    font-family: 'AmnestyTradeGothic-Regular';
+    src: url('https://[USER].github.io/mini-cdn/fonts/AmnestyTradeGothic-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}</pre>
+        <div class="font-preview preview-atg-regular">The quick brown fox jumps over the lazy dog.</div>
+    </div>
+
+    <h2>Other Font Assets</h2>
+
+    <div class="asset-card">
+        <span class="asset-name">Patrick Hand - Regular</span>
+        <code>./PatrickHand-Regular.ttf</code>
+        <pre>@font-face {
+    font-family: 'PatrickHand-Regular';
+    src: url('https://[USER].github.io/mini-cdn/PatrickHand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}</pre>
+        <div class="font-preview preview-patrick">The quick brown fox jumps over the lazy dog.</div>
+    </div>
+
+    <hr>
+    <p class="copy-hint">Note: Replace <code>[USER]</code> with your GitHub username in the URLs above.</p>
+</body>
+</html>
